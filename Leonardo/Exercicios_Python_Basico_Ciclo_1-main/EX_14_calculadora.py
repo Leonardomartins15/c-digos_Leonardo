@@ -59,18 +59,35 @@ print("2 - Subtração")
 print("3 - Divisão")
 print("4 - Multiplicação")
 
-opção = input("Digite a opção :")
+opcao = input("Digite a opção :")
 
 
-if opção == "1" :
+if opcao == "1" :
     numero1 = int(input("Digite o número :")) 
-    numero2= float(input(f"Digite o número :"))
-    valor = numero1 + 
-    print(f"O valor em reais é {valor:.2f}")
+    numero2= float(input("Digite o número :"))
+    valor = numero1 + numero2
+    print(f"resultado da adição foi: {valor:.2f}")
+
+elif opcao == "2" :
+    numero1 = int(input("Digite o número :")) 
+    numero2= float(input("Digite o número :"))
+    valor = numero1 - numero2
+    print(f"resultado da subtração foi: {valor:.2f}")
+
+elif opcao == "3" :
+    numero1 = int(input("Digite o número :")) 
+    numero2= float(input("Digite o número :"))
+    valor = numero1 / numero2
+    print(f"resultado da divisão foi: {valor:.2f}")
+
+elif opcao == "4" :
+    numero1 = int(input("Digite o número :")) 
+    numero2= float(input("Digite o número :"))
+    valor = numero1 * numero2
+    print(f"resultado da multiplicação foi: {valor:.2f}")
 
 else :
-    cotacao = float(input("Informe cotação atual do Dollar :"))
-    quantidade = float(input(f"Informe a quantidade em Reais:"))
-    valor = quantidade / cotacao
-    print(f"O valor em dólares é {valor:.2f}")
- 
+   
+    print(f"ERRO. Escolha uma opção válida.")
+
+
